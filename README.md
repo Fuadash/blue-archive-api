@@ -1,0 +1,1 @@
+In progress REST API for hit mobile game Blue Archive, almost entirely for my own convenience in the future

@@ -5,6 +5,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.gg.foa.bluearchivestudentapi.model.StudentRoot;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,23 +22,28 @@ public class ApiController {
     @Autowired
     private DataController dataController; // Lets Spring handle the dependency
 
-    @GetMapping("")
+    @GetMapping(value = "", produces = "application/json")
     public String getAllStudents() {
         return dataController.getStudentData();
     }
 
-    @GetMapping("/id/{id}")
-    public String getStudentById(@PathVariable Integer id) throws JsonProcessingException {
+    @GetMapping(value = "/id/{id}", produces = "application/json")
+    public ResponseEntity<String> getStudentById(@PathVariable Integer id) throws JsonProcessingException {
         String rawStudentData = dataController.getStudentData();
         ObjectMapper objectMapper = new ObjectMapper();
         List<StudentRoot> responseObject = objectMapper.readValue(rawStudentData, new TypeReference<>() {}); // StudentRoot being the student objects based on the json response
-        Optional<String> studentMatch = responseObject.stream() // Get the name of the student from the ID, TODO: Have this return the entire StudentRoot
-                .filter(student -> id.equals(student.getId()))
-                .map(StudentRoot::getName).findFirst();
-        String result = studentMatch // Unwrap optional
-                .map(Object::toString)
-                .orElse("Student not found");
-        return result;
+        Optional<StudentRoot> studentMatch = responseObject.stream() // Get the matching student from the ID
+                .filter(student -> id.equals(student.getId())).findFirst();
+        return studentMatch // Unwrap optional
+                .map(student -> {
+                    try {
+                        return ResponseEntity.status(HttpStatus.OK).body(objectMapper.writeValueAsString(student)); // Converts java object to json format
+                    } catch (JsonProcessingException e) {
+                        e.printStackTrace();
+                        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error processing student data"); // TODO: Use error ResponseEntity to return a error responses in json format
+                    }
+                })
+                .orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).body("Student not found"));
     }
 
     // TODO: Many more endpoints

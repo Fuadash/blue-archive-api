@@ -6,19 +6,51 @@ import java.util.ArrayList;
 
 public class ExtraDamageSource {
     @JsonProperty("Side")
-    public String side;
+    private String side;
     @JsonProperty("Stat")
-    public String stat;
+    private String stat;
     @JsonProperty("Multiplier")
-    public ArrayList<Integer> multiplier;
+    private ArrayList<Integer> multiplier;
     @JsonProperty("SliderTranslation")
-    public String sliderTranslation;
+    private String sliderTranslation;
     @JsonProperty("SliderStep")
-    public ArrayList<Double> sliderStep;
+    private ArrayList<Double> sliderStep;
     @JsonProperty("SliderLabel")
-    public ArrayList<Integer> sliderLabel;
+    private ArrayList<Integer> sliderLabel;
     @JsonProperty("SliderLabelSuffix")
-    public String sliderLabelSuffix;
+    private String sliderLabelSuffix;
     @JsonProperty("SimulatePerHit")
-    public boolean simulatePerHit;
+    private boolean simulatePerHit;
+
+    public String getSide() {
+        return side;
+    }
+
+    public String getStat() {
+        return stat;
+    }
+
+    public ArrayList<Integer> getMultiplier() {
+        return multiplier;
+    }
+
+    public String getSliderTranslation() {
+        return sliderTranslation;
+    }
+
+    public ArrayList<Double> getSliderStep() {
+        return sliderStep;
+    }
+
+    public ArrayList<Integer> getSliderLabel() {
+        return sliderLabel;
+    }
+
+    public String getSliderLabelSuffix() {
+        return sliderLabelSuffix;
+    }
+
+    public boolean isSimulatePerHit() {
+        return simulatePerHit;
+    }
 }

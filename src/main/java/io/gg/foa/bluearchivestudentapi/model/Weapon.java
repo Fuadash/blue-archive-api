@@ -2,27 +2,71 @@ package io.gg.foa.bluearchivestudentapi.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Weapon{
+public class Weapon {
     @JsonProperty("Name")
-    public String name;
+    private String name;
     @JsonProperty("Desc")
-    public String desc;
+    private String desc;
     @JsonProperty("AdaptationType")
-    public String adaptationType;
+    private String adaptationType;
     @JsonProperty("AdaptationValue")
-    public int adaptationValue;
+    private int adaptationValue;
     @JsonProperty("AttackPower1")
-    public int attackPower1;
+    private int attackPower1;
     @JsonProperty("AttackPower100")
-    public int attackPower100;
+    private int attackPower100;
     @JsonProperty("MaxHP1")
-    public int maxHP1;
+    private int maxHP1;
     @JsonProperty("MaxHP100")
-    public int maxHP100;
+    private int maxHP100;
     @JsonProperty("HealPower1")
-    public int healPower1;
+    private int healPower1;
     @JsonProperty("HealPower100")
-    public int healPower100;
+    private int healPower100;
     @JsonProperty("StatLevelUpType")
-    public String statLevelUpType;
+    private String statLevelUpType;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public String getAdaptationType() {
+        return adaptationType;
+    }
+
+    public int getAdaptationValue() {
+        return adaptationValue;
+    }
+
+    public int getAttackPower1() {
+        return attackPower1;
+    }
+
+    public int getAttackPower100() {
+        return attackPower100;
+    }
+
+    public int getMaxHP1() {
+        return maxHP1;
+    }
+
+    public int getMaxHP100() {
+        return maxHP100;
+    }
+
+    public int getHealPower1() {
+        return healPower1;
+    }
+
+    public int getHealPower100() {
+        return healPower100;
+    }
+
+    public String getStatLevelUpType() {
+        return statLevelUpType;
+    }
 }

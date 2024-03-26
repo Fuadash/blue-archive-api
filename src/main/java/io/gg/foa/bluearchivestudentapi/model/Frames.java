@@ -4,19 +4,51 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Frames {
     @JsonProperty("AttackEnterDuration")
-    public int attackEnterDuration;
+    private int attackEnterDuration;
     @JsonProperty("AttackStartDuration")
-    public int attackStartDuration;
+    private int attackStartDuration;
     @JsonProperty("AttackEndDuration")
-    public int attackEndDuration;
+    private int attackEndDuration;
     @JsonProperty("AttackBurstRoundOverDelay")
-    public int attackBurstRoundOverDelay;
+    private int attackBurstRoundOverDelay;
     @JsonProperty("AttackIngDuration")
-    public int attackIngDuration;
+    private int attackIngDuration;
     @JsonProperty("AttackReloadDuration")
-    public int attackReloadDuration;
+    private int attackReloadDuration;
     @JsonProperty("AttackReadyStartDuration")
-    public int attackReadyStartDuration;
+    private int attackReadyStartDuration;
     @JsonProperty("AttackReadyEndDuration")
-    public int attackReadyEndDuration;
+    private int attackReadyEndDuration;
+
+    public int getAttackEnterDuration() {
+        return attackEnterDuration;
+    }
+
+    public int getAttackStartDuration() {
+        return attackStartDuration;
+    }
+
+    public int getAttackEndDuration() {
+        return attackEndDuration;
+    }
+
+    public int getAttackBurstRoundOverDelay() {
+        return attackBurstRoundOverDelay;
+    }
+
+    public int getAttackIngDuration() {
+        return attackIngDuration;
+    }
+
+    public int getAttackReloadDuration() {
+        return attackReloadDuration;
+    }
+
+    public int getAttackReadyStartDuration() {
+        return attackReadyStartDuration;
+    }
+
+    public int getAttackReadyEndDuration() {
+        return attackReadyEndDuration;
+    }
 }

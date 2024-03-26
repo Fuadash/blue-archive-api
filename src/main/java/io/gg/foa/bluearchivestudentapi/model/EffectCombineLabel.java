@@ -6,11 +6,27 @@ import java.util.ArrayList;
 
 public class EffectCombineLabel {
     @JsonProperty("Icon")
-    public ArrayList<String> icon;
+    private ArrayList<String> icon;
     @JsonProperty("StackLabelTranslated")
-    public ArrayList<String> stackLabelTranslated;
+    private ArrayList<String> stackLabelTranslated;
     @JsonProperty("DisableFirst")
-    public boolean disableFirst;
+    private boolean disableFirst;
     @JsonProperty("StackLabel")
-    public ArrayList<String> stackLabel;
+    private ArrayList<String> stackLabel;
+
+    public ArrayList<String> getIcon() {
+        return icon;
+    }
+
+    public ArrayList<String> getStackLabelTranslated() {
+        return stackLabelTranslated;
+    }
+
+    public boolean isDisableFirst() {
+        return disableFirst;
+    }
+
+    public ArrayList<String> getStackLabel() {
+        return stackLabel;
+    }
 }

@@ -4,15 +4,39 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Radius {
     @JsonProperty("Type")
-    public String type;
+    private String type;
     @JsonProperty("Radius")
-    public int radius;
+    private int radius;
     @JsonProperty("Degree")
-    public int degree;
+    private int degree;
     @JsonProperty("Width")
-    public int width;
+    private int width;
     @JsonProperty("Height")
-    public int height;
+    private int height;
     @JsonProperty("ExcludeRadius")
-    public int excludeRadius;
+    private int excludeRadius;
+
+    public String getType() {
+        return type;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public int getDegree() {
+        return degree;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getExcludeRadius() {
+        return excludeRadius;
+    }
 }

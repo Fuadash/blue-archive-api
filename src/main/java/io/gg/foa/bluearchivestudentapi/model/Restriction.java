@@ -4,9 +4,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Restriction {
     @JsonProperty("Property")
-    public String property;
+    private String property;
     @JsonProperty("Operand")
-    public String operand;
+    private String operand;
     @JsonProperty("Value")
-    public Object value;
+    private Object value;
+
+    public String getProperty() {
+        return property;
+    }
+
+    public String getOperand() {
+        return operand;
+    }
+
+    public Object getValue() {
+        return value;
+    }
 }

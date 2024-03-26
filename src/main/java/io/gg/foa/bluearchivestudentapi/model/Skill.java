@@ -6,33 +6,93 @@ import java.util.ArrayList;
 
 public class Skill {
     @JsonProperty("SkillType")
-    public String skillType;
+    private String skillType;
     @JsonProperty("Effects")
-    public ArrayList<Effect> effects;
+    private ArrayList<Effect> effects;
     @JsonProperty("Name")
-    public String name;
+    private String name;
     @JsonProperty("Desc")
-    public String desc;
+    private String desc;
     @JsonProperty("Parameters")
-    public ArrayList<ArrayList<String>> parameters;
+    private ArrayList<ArrayList<String>> parameters;
     @JsonProperty("Cost")
-    public ArrayList<Integer> cost;
+    private ArrayList<Integer> cost;
     @JsonProperty("Duration")
-    public int duration;
+    private int duration;
     @JsonProperty("Range")
-    public int range;
+    private int range;
     @JsonProperty("Radius")
-    public ArrayList<Radius> radius;
+    private ArrayList<Radius> radius;
     @JsonProperty("Icon")
-    public String icon;
+    private String icon;
     @JsonProperty("EffectCombine")
-    public ArrayList<String> effectCombine;
+    private ArrayList<String> effectCombine;
     @JsonProperty("EffectCombineLabel")
-    public EffectCombineLabel effectCombineLabel;
+    private EffectCombineLabel effectCombineLabel;
     @JsonProperty("ExtraSkills")
-    public ArrayList<ExtraSkill> extraSkills;
+    private ArrayList<ExtraSkill> extraSkills;
     @JsonProperty("InheritScale")
-    public InheritScale inheritScale;
+    private InheritScale inheritScale;
     @JsonProperty("HideCalculation")
-    public boolean hideCalculation;
+    private boolean hideCalculation;
+
+    public String getSkillType() {
+        return skillType;
+    }
+
+    public ArrayList<Effect> getEffects() {
+        return effects;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public ArrayList<ArrayList<String>> getParameters() {
+        return parameters;
+    }
+
+    public ArrayList<Integer> getCost() {
+        return cost;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public int getRange() {
+        return range;
+    }
+
+    public ArrayList<Radius> getRadius() {
+        return radius;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public ArrayList<String> getEffectCombine() {
+        return effectCombine;
+    }
+
+    public EffectCombineLabel getEffectCombineLabel() {
+        return effectCombineLabel;
+    }
+
+    public ArrayList<ExtraSkill> getExtraSkills() {
+        return extraSkills;
+    }
+
+    public InheritScale getInheritScale() {
+        return inheritScale;
+    }
+
+    public boolean isHideCalculation() {
+        return hideCalculation;
+    }
 }

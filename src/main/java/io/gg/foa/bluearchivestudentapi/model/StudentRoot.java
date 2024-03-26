@@ -6,151 +6,151 @@ import java.util.ArrayList;
 
 public class StudentRoot {
     @JsonProperty("Id")
-    public int id;
+    private int id;
     @JsonProperty("IsReleased")
-    public ArrayList<Boolean> isReleased;
+    private ArrayList<Boolean> isReleased;
     @JsonProperty("DefaultOrder")
-    public int defaultOrder;
+    private int defaultOrder;
     @JsonProperty("PathName")
-    public String pathName;
+    private String pathName;
     @JsonProperty("DevName")
-    public String devName;
+    private String devName;
     @JsonProperty("Name")
-    public String name;
+    private String name;
     @JsonProperty("School")
-    public String school;
+    private String school;
     @JsonProperty("Club")
-    public String club;
+    private String club;
     @JsonProperty("StarGrade")
-    public int starGrade;
+    private int starGrade;
     @JsonProperty("SquadType")
-    public String squadType;
+    private String squadType;
     @JsonProperty("TacticRole")
-    public String tacticRole;
+    private String tacticRole;
     @JsonProperty("Summons")
-    public ArrayList<Summon> summons;
+    private ArrayList<Summon> summons;
     @JsonProperty("Position")
-    public String position;
+    private String position;
     @JsonProperty("BulletType")
-    public String bulletType;
+    private String bulletType;
     @JsonProperty("ArmorType")
-    public String armorType;
+    private String armorType;
     @JsonProperty("StreetBattleAdaptation")
-    public int streetBattleAdaptation;
+    private int streetBattleAdaptation;
     @JsonProperty("OutdoorBattleAdaptation")
-    public int outdoorBattleAdaptation;
+    private int outdoorBattleAdaptation;
     @JsonProperty("IndoorBattleAdaptation")
-    public int indoorBattleAdaptation;
+    private int indoorBattleAdaptation;
     @JsonProperty("WeaponType")
-    public String weaponType;
+    private String weaponType;
     @JsonProperty("WeaponImg")
-    public String weaponImg;
+    private String weaponImg;
     @JsonProperty("Cover")
-    public boolean cover;
+    private boolean cover;
     @JsonProperty("Equipment")
-    public ArrayList<String> equipment;
+    private ArrayList<String> equipment;
     @JsonProperty("CollectionBG")
-    public String collectionBG;
+    private String collectionBG;
     @JsonProperty("FamilyName")
-    public String familyName;
+    private String familyName;
     @JsonProperty("PersonalName")
-    public String personalName;
+    private String personalName;
     @JsonProperty("SchoolYear")
-    public String schoolYear;
+    private String schoolYear;
     @JsonProperty("CharacterAge")
-    public String characterAge;
+    private String characterAge;
     @JsonProperty("Birthday")
-    public String birthday;
+    private String birthday;
     @JsonProperty("CharacterSSRNew")
-    public String characterSSRNew;
+    private String characterSSRNew;
     @JsonProperty("ProfileIntroduction")
-    public String profileIntroduction;
+    private String profileIntroduction;
     @JsonProperty("Hobby")
-    public String hobby;
+    private String hobby;
     @JsonProperty("CharacterVoice")
-    public String characterVoice;
+    private String characterVoice;
     @JsonProperty("BirthDay")
-    public String birthDay;
+    private String birthDay;
     @JsonProperty("Illustrator")
-    public String illustrator;
+    private String illustrator;
     @JsonProperty("Designer")
-    public String designer;
+    private String designer;
     @JsonProperty("CharHeightMetric")
-    public String charHeightMetric;
+    private String charHeightMetric;
     @JsonProperty("CharHeightImperial")
-    public String charHeightImperial;
+    private String charHeightImperial;
     @JsonProperty("StabilityPoint")
-    public int stabilityPoint;
+    private int stabilityPoint;
     @JsonProperty("AttackPower1")
-    public int attackPower1;
+    private int attackPower1;
     @JsonProperty("AttackPower100")
-    public int attackPower100;
+    private int attackPower100;
     @JsonProperty("MaxHP1")
-    public int maxHP1;
+    private int maxHP1;
     @JsonProperty("MaxHP100")
-    public int maxHP100;
+    private int maxHP100;
     @JsonProperty("DefensePower1")
-    public int defensePower1;
+    private int defensePower1;
     @JsonProperty("DefensePower100")
-    public int defensePower100;
+    private int defensePower100;
     @JsonProperty("HealPower1")
-    public int healPower1;
+    private int healPower1;
     @JsonProperty("HealPower100")
-    public int healPower100;
+    private int healPower100;
     @JsonProperty("DodgePoint")
-    public int dodgePoint;
+    private int dodgePoint;
     @JsonProperty("AccuracyPoint")
-    public int accuracyPoint;
+    private int accuracyPoint;
     @JsonProperty("CriticalPoint")
-    public int criticalPoint;
+    private int criticalPoint;
     @JsonProperty("CriticalDamageRate")
-    public int criticalDamageRate;
+    private int criticalDamageRate;
     @JsonProperty("AmmoCount")
-    public int ammoCount;
+    private int ammoCount;
     @JsonProperty("AmmoCost")
-    public int ammoCost;
+    private int ammoCost;
     @JsonProperty("Range")
-    public int range;
+    private int range;
     @JsonProperty("RegenCost")
-    public int regenCost;
+    private int regenCost;
     @JsonProperty("Skills")
-    public ArrayList<Skill> skills;
+    private ArrayList<Skill> skills;
     @JsonProperty("FavorStatType")
-    public ArrayList<String> favorStatType;
+    private ArrayList<String> favorStatType;
     @JsonProperty("FavorStatValue")
-    public ArrayList<ArrayList<Integer>> favorStatValue;
+    private ArrayList<ArrayList<Integer>> favorStatValue;
     @JsonProperty("FavorAlts")
-    public ArrayList<Integer> favorAlts;
+    private ArrayList<Integer> favorAlts;
     @JsonProperty("MemoryLobby")
-    public ArrayList<Integer> memoryLobby;
+    private ArrayList<Integer> memoryLobby;
     @JsonProperty("MemoryLobbyBGM")
-    public String memoryLobbyBGM;
+    private String memoryLobbyBGM;
     @JsonProperty("FurnitureInteraction")
-    public ArrayList<ArrayList<ArrayList<Integer>>> furnitureInteraction;
+    private ArrayList<ArrayList<ArrayList<Integer>>> furnitureInteraction;
     @JsonProperty("FavorItemTags")
-    public ArrayList<String> favorItemTags;
+    private ArrayList<String> favorItemTags;
     @JsonProperty("FavorItemUniqueTags")
-    public ArrayList<String> favorItemUniqueTags;
+    private ArrayList<String> favorItemUniqueTags;
     @JsonProperty("IsLimited")
-    public int isLimited;
+    private int isLimited;
     @JsonProperty("Weapon")
-    public Weapon weapon;
+    private Weapon weapon;
     @JsonProperty("Gear")
-    public Gear gear;
+    private Gear gear;
     @JsonProperty("SkillExMaterial")
-    public ArrayList<ArrayList<Integer>> skillExMaterial;
+    private ArrayList<ArrayList<Integer>> skillExMaterial;
     @JsonProperty("SkillExMaterialAmount")
-    public ArrayList<ArrayList<Integer>> skillExMaterialAmount;
+    private ArrayList<ArrayList<Integer>> skillExMaterialAmount;
     @JsonProperty("SkillMaterial")
-    public ArrayList<ArrayList<Integer>> skillMaterial;
+    private ArrayList<ArrayList<Integer>> skillMaterial;
     @JsonProperty("SkillMaterialAmount")
-    public ArrayList<ArrayList<Integer>> skillMaterialAmount;
+    private ArrayList<ArrayList<Integer>> skillMaterialAmount;
     @JsonProperty("TSAId")
-    public int tSAId;
+    private int tSAId;
     @JsonProperty("DefensePenetration1")
-    public int defensePenetration1;
+    private int defensePenetration1;
     @JsonProperty("DefensePenetration100")
-    public int defensePenetration100;
+    private int defensePenetration100;
 
     public int getId() {
         return this.id;
@@ -158,5 +158,289 @@ public class StudentRoot {
 
     public String getName() {
         return this.name;
+    }
+
+    public ArrayList<Boolean> getIsReleased() {
+        return isReleased;
+    }
+
+    public int getDefaultOrder() {
+        return defaultOrder;
+    }
+
+    public String getPathName() {
+        return pathName;
+    }
+
+    public String getDevName() {
+        return devName;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public String getClub() {
+        return club;
+    }
+
+    public int getStarGrade() {
+        return starGrade;
+    }
+
+    public String getSquadType() {
+        return squadType;
+    }
+
+    public String getTacticRole() {
+        return tacticRole;
+    }
+
+    public ArrayList<Summon> getSummons() {
+        return summons;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public String getBulletType() {
+        return bulletType;
+    }
+
+    public String getArmorType() {
+        return armorType;
+    }
+
+    public int getStreetBattleAdaptation() {
+        return streetBattleAdaptation;
+    }
+
+    public int getOutdoorBattleAdaptation() {
+        return outdoorBattleAdaptation;
+    }
+
+    public int getIndoorBattleAdaptation() {
+        return indoorBattleAdaptation;
+    }
+
+    public String getWeaponType() {
+        return weaponType;
+    }
+
+    public String getWeaponImg() {
+        return weaponImg;
+    }
+
+    public boolean isCover() {
+        return cover;
+    }
+
+    public ArrayList<String> getEquipment() {
+        return equipment;
+    }
+
+    public String getCollectionBG() {
+        return collectionBG;
+    }
+
+    public String getFamilyName() {
+        return familyName;
+    }
+
+    public String getPersonalName() {
+        return personalName;
+    }
+
+    public String getSchoolYear() {
+        return schoolYear;
+    }
+
+    public String getCharacterAge() {
+        return characterAge;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public String getCharacterSSRNew() {
+        return characterSSRNew;
+    }
+
+    public String getProfileIntroduction() {
+        return profileIntroduction;
+    }
+
+    public String getHobby() {
+        return hobby;
+    }
+
+    public String getCharacterVoice() {
+        return characterVoice;
+    }
+
+    public String getBirthDay() {
+        return birthDay;
+    }
+
+    public String getIllustrator() {
+        return illustrator;
+    }
+
+    public String getDesigner() {
+        return designer;
+    }
+
+    public String getCharHeightMetric() {
+        return charHeightMetric;
+    }
+
+    public String getCharHeightImperial() {
+        return charHeightImperial;
+    }
+
+    public int getStabilityPoint() {
+        return stabilityPoint;
+    }
+
+    public int getAttackPower1() {
+        return attackPower1;
+    }
+
+    public int getAttackPower100() {
+        return attackPower100;
+    }
+
+    public int getMaxHP1() {
+        return maxHP1;
+    }
+
+    public int getMaxHP100() {
+        return maxHP100;
+    }
+
+    public int getDefensePower1() {
+        return defensePower1;
+    }
+
+    public int getDefensePower100() {
+        return defensePower100;
+    }
+
+    public int getHealPower1() {
+        return healPower1;
+    }
+
+    public int getHealPower100() {
+        return healPower100;
+    }
+
+    public int getDodgePoint() {
+        return dodgePoint;
+    }
+
+    public int getAccuracyPoint() {
+        return accuracyPoint;
+    }
+
+    public int getCriticalPoint() {
+        return criticalPoint;
+    }
+
+    public int getCriticalDamageRate() {
+        return criticalDamageRate;
+    }
+
+    public int getAmmoCount() {
+        return ammoCount;
+    }
+
+    public int getAmmoCost() {
+        return ammoCost;
+    }
+
+    public int getRange() {
+        return range;
+    }
+
+    public int getRegenCost() {
+        return regenCost;
+    }
+
+    public ArrayList<Skill> getSkills() {
+        return skills;
+    }
+
+    public ArrayList<String> getFavorStatType() {
+        return favorStatType;
+    }
+
+    public ArrayList<ArrayList<Integer>> getFavorStatValue() {
+        return favorStatValue;
+    }
+
+    public ArrayList<Integer> getFavorAlts() {
+        return favorAlts;
+    }
+
+    public ArrayList<Integer> getMemoryLobby() {
+        return memoryLobby;
+    }
+
+    public String getMemoryLobbyBGM() {
+        return memoryLobbyBGM;
+    }
+
+    public ArrayList<ArrayList<ArrayList<Integer>>> getFurnitureInteraction() {
+        return furnitureInteraction;
+    }
+
+    public ArrayList<String> getFavorItemTags() {
+        return favorItemTags;
+    }
+
+    public ArrayList<String> getFavorItemUniqueTags() {
+        return favorItemUniqueTags;
+    }
+
+    public int getIsLimited() {
+        return isLimited;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public Gear getGear() {
+        return gear;
+    }
+
+    public ArrayList<ArrayList<Integer>> getSkillExMaterial() {
+        return skillExMaterial;
+    }
+
+    public ArrayList<ArrayList<Integer>> getSkillExMaterialAmount() {
+        return skillExMaterialAmount;
+    }
+
+    public ArrayList<ArrayList<Integer>> getSkillMaterial() {
+        return skillMaterial;
+    }
+
+    public ArrayList<ArrayList<Integer>> getSkillMaterialAmount() {
+        return skillMaterialAmount;
+    }
+
+    public int gettSAId() {
+        return tSAId;
+    }
+
+    public int getDefensePenetration1() {
+        return defensePenetration1;
+    }
+
+    public int getDefensePenetration100() {
+        return defensePenetration100;
     }
 }

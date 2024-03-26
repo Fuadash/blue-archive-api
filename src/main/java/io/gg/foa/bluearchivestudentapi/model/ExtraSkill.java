@@ -6,27 +6,75 @@ import java.util.ArrayList;
 
 public class ExtraSkill {
     @JsonProperty("Id")
-    public String id;
+    private String id;
     @JsonProperty("SkillType")
-    public String skillType;
+    private String skillType;
     @JsonProperty("Name")
-    public String name;
+    private String name;
     @JsonProperty("Desc")
-    public String desc;
+    private String desc;
     @JsonProperty("Parameters")
-    public ArrayList<ArrayList<String>> parameters;
+    private ArrayList<ArrayList<String>> parameters;
     @JsonProperty("Radius")
-    public ArrayList<Radius> radius;
+    private ArrayList<Radius> radius;
     @JsonProperty("Icon")
-    public String icon;
+    private String icon;
     @JsonProperty("Effects")
-    public ArrayList<Effect> effects;
+    private ArrayList<Effect> effects;
     @JsonProperty("Duration")
-    public int duration;
+    private int duration;
     @JsonProperty("Range")
-    public int range;
+    private int range;
     @JsonProperty("Cost")
-    public ArrayList<Integer> cost;
+    private ArrayList<Integer> cost;
     @JsonProperty("TSAId")
-    public int tSAId;
+    private int tSAId;
+
+    public String getId() {
+        return id;
+    }
+
+    public String getSkillType() {
+        return skillType;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public ArrayList<ArrayList<String>> getParameters() {
+        return parameters;
+    }
+
+    public ArrayList<Radius> getRadius() {
+        return radius;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public ArrayList<Effect> getEffects() {
+        return effects;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public int getRange() {
+        return range;
+    }
+
+    public ArrayList<Integer> getCost() {
+        return cost;
+    }
+
+    public int gettSAId() {
+        return tSAId;
+    }
 }

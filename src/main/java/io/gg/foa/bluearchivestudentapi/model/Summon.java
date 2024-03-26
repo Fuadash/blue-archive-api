@@ -6,15 +6,39 @@ import java.util.ArrayList;
 
 public class Summon {
     @JsonProperty("Id")
-    public int id;
+    private int id;
     @JsonProperty("SourceSkill")
-    public String sourceSkill;
+    private String sourceSkill;
     @JsonProperty("InheritCasterStat")
-    public ArrayList<String> inheritCasterStat;
+    private ArrayList<String> inheritCasterStat;
     @JsonProperty("InheritCasterAmount")
-    public ArrayList<ArrayList<Integer>> inheritCasterAmount;
+    private ArrayList<ArrayList<Integer>> inheritCasterAmount;
     @JsonProperty("ObstacleMaxHP1")
-    public int obstacleMaxHP1;
+    private int obstacleMaxHP1;
     @JsonProperty("ObstacleMaxHP100")
-    public int obstacleMaxHP100;
+    private int obstacleMaxHP100;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getSourceSkill() {
+        return sourceSkill;
+    }
+
+    public ArrayList<String> getInheritCasterStat() {
+        return inheritCasterStat;
+    }
+
+    public ArrayList<ArrayList<Integer>> getInheritCasterAmount() {
+        return inheritCasterAmount;
+    }
+
+    public int getObstacleMaxHP1() {
+        return obstacleMaxHP1;
+    }
+
+    public int getObstacleMaxHP100() {
+        return obstacleMaxHP100;
+    }
 }

@@ -6,17 +6,45 @@ import java.util.ArrayList;
 
 public class Gear {
     @JsonProperty("Released")
-    public ArrayList<Boolean> released;
+    private ArrayList<Boolean> released;
     @JsonProperty("StatType")
-    public ArrayList<String> statType;
+    private ArrayList<String> statType;
     @JsonProperty("StatValue")
-    public ArrayList<ArrayList<Integer>> statValue;
+    private ArrayList<ArrayList<Integer>> statValue;
     @JsonProperty("Name")
-    public String name;
+    private String name;
     @JsonProperty("Desc")
-    public String desc;
+    private String desc;
     @JsonProperty("TierUpMaterial")
-    public ArrayList<ArrayList<Integer>> tierUpMaterial;
+    private ArrayList<ArrayList<Integer>> tierUpMaterial;
     @JsonProperty("TierUpMaterialAmount")
-    public ArrayList<ArrayList<Integer>> tierUpMaterialAmount;
+    private ArrayList<ArrayList<Integer>> tierUpMaterialAmount;
+
+    public ArrayList<Boolean> getReleased() {
+        return released;
+    }
+
+    public ArrayList<String> getStatType() {
+        return statType;
+    }
+
+    public ArrayList<ArrayList<Integer>> getStatValue() {
+        return statValue;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public ArrayList<ArrayList<Integer>> getTierUpMaterial() {
+        return tierUpMaterial;
+    }
+
+    public ArrayList<ArrayList<Integer>> getTierUpMaterialAmount() {
+        return tierUpMaterialAmount;
+    }
 }

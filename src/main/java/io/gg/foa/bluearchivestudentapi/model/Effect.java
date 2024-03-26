@@ -6,67 +6,195 @@ import java.util.ArrayList;
 
 public class Effect {
     @JsonProperty("Type")
-    public String type;
+    private String type;
     @JsonProperty("Hits")
-    public ArrayList<Integer> hits;
+    private ArrayList<Integer> hits;
     @JsonProperty("Scale")
-    public ArrayList<Integer> scale;
+    private ArrayList<Integer> scale;
     @JsonProperty("Frames")
-    public Frames frames;
+    private Frames frames;
     @JsonProperty("CriticalCheck")
-    public String criticalCheck;
+    private String criticalCheck;
     @JsonProperty("Stat")
-    public String stat;
+    private String stat;
     @JsonProperty("Value")
-    public ArrayList<ArrayList<Integer>> value;
+    private ArrayList<ArrayList<Integer>> value;
     @JsonProperty("Channel")
-    public int channel;
+    private int channel;
     @JsonProperty("Duration")
-    public int duration;
+    private int duration;
     @JsonProperty("Period")
-    public int period;
+    private int period;
     @JsonProperty("ExtraStatSource")
-    public String extraStatSource;
+    private String extraStatSource;
     @JsonProperty("ExtraStatRate")
-    public ArrayList<Integer> extraStatRate;
+    private ArrayList<Integer> extraStatRate;
     @JsonProperty("HitsParameter")
-    public int hitsParameter;
+    private int hitsParameter;
     @JsonProperty("Chance")
-    public int chance;
+    private int chance;
     @JsonProperty("Icon")
-    public String icon;
+    private String icon;
     @JsonProperty("SubstituteCondition")
-    public String substituteCondition;
+    private String substituteCondition;
     @JsonProperty("SubstituteScale")
-    public ArrayList<Integer> substituteScale;
+    private ArrayList<Integer> substituteScale;
     @JsonProperty("MultiplySource")
-    public String multiplySource;
+    private String multiplySource;
     @JsonProperty("MultiplierConstant")
-    public ArrayList<Integer> multiplierConstant;
+    private ArrayList<Integer> multiplierConstant;
     @JsonProperty("HitFrames")
-    public ArrayList<Integer> hitFrames;
+    private ArrayList<Integer> hitFrames;
     @JsonProperty("IgnoreDelay")
-    public ArrayList<Integer> ignoreDelay;
+    private ArrayList<Integer> ignoreDelay;
     @JsonProperty("StackSame")
-    public int stackSame;
+    private int stackSame;
     @JsonProperty("IgnoreDef")
-    public ArrayList<Integer> ignoreDef;
+    private ArrayList<Integer> ignoreDef;
     @JsonProperty("OverrideSlot")
-    public String overrideSlot;
+    private String overrideSlot;
     @JsonProperty("Restrictions")
-    public ArrayList<Restriction> restrictions;
+    private ArrayList<Restriction> restrictions;
     @JsonProperty("ZoneHitInterval")
-    public int zoneHitInterval;
+    private int zoneHitInterval;
     @JsonProperty("ZoneDuration")
-    public int zoneDuration;
+    private int zoneDuration;
     @JsonProperty("Critical")
-    public int critical;
+    private int critical;
     @JsonProperty("HideFormChangeIcon")
-    public boolean hideFormChangeIcon;
+    private boolean hideFormChangeIcon;
     @JsonProperty("SourceStat")
-    public String sourceStat;
+    private String sourceStat;
     @JsonProperty("ExtraDamageSource")
-    public ExtraDamageSource extraDamageSource;
+    private ExtraDamageSource extraDamageSource;
     @JsonProperty("ApplyStability")
-    public boolean applyStability;
+    private boolean applyStability;
+
+    public String getType() {
+        return type;
+    }
+
+    public ArrayList<Integer> getHits() {
+        return hits;
+    }
+
+    public ArrayList<Integer> getScale() {
+        return scale;
+    }
+
+    public Frames getFrames() {
+        return frames;
+    }
+
+    public String getCriticalCheck() {
+        return criticalCheck;
+    }
+
+    public String getStat() {
+        return stat;
+    }
+
+    public ArrayList<ArrayList<Integer>> getValue() {
+        return value;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public String getExtraStatSource() {
+        return extraStatSource;
+    }
+
+    public ArrayList<Integer> getExtraStatRate() {
+        return extraStatRate;
+    }
+
+    public int getHitsParameter() {
+        return hitsParameter;
+    }
+
+    public int getChance() {
+        return chance;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public String getSubstituteCondition() {
+        return substituteCondition;
+    }
+
+    public ArrayList<Integer> getSubstituteScale() {
+        return substituteScale;
+    }
+
+    public String getMultiplySource() {
+        return multiplySource;
+    }
+
+    public ArrayList<Integer> getMultiplierConstant() {
+        return multiplierConstant;
+    }
+
+    public ArrayList<Integer> getHitFrames() {
+        return hitFrames;
+    }
+
+    public ArrayList<Integer> getIgnoreDelay() {
+        return ignoreDelay;
+    }
+
+    public int getStackSame() {
+        return stackSame;
+    }
+
+    public ArrayList<Integer> getIgnoreDef() {
+        return ignoreDef;
+    }
+
+    public String getOverrideSlot() {
+        return overrideSlot;
+    }
+
+    public ArrayList<Restriction> getRestrictions() {
+        return restrictions;
+    }
+
+    public int getZoneHitInterval() {
+        return zoneHitInterval;
+    }
+
+    public int getZoneDuration() {
+        return zoneDuration;
+    }
+
+    public int getCritical() {
+        return critical;
+    }
+
+    public boolean isHideFormChangeIcon() {
+        return hideFormChangeIcon;
+    }
+
+    public String getSourceStat() {
+        return sourceStat;
+    }
+
+    public ExtraDamageSource getExtraDamageSource() {
+        return extraDamageSource;
+    }
+
+    public boolean isApplyStability() {
+        return applyStability;
+    }
 }

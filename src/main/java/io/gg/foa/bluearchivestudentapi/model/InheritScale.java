@@ -4,9 +4,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class InheritScale {
     @JsonProperty("Skill")
-    public String skill;
+    private String skill;
     @JsonProperty("EffectId")
-    public int effectId;
+    private int effectId;
     @JsonProperty("Parameter")
-    public int parameter;
+    private int parameter;
+
+    public String getSkill() {
+        return skill;
+    }
+
+    public int getEffectId() {
+        return effectId;
+    }
+
+    public int getParameter() {
+        return parameter;
+    }
 }

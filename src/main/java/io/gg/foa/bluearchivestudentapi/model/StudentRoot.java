@@ -11,6 +11,10 @@ public class StudentRoot {
     private ArrayList<Boolean> isReleased;
     @JsonProperty("DefaultOrder")
     private int defaultOrder;
+    @JsonProperty("LinkedCharacterId")
+    private int linkedCharacterId;
+    @JsonProperty("StyleId")
+    private int styleId;
     @JsonProperty("PathName")
     private String pathName;
     @JsonProperty("DevName")
